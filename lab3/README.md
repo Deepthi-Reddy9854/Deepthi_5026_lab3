@@ -33,24 +33,26 @@ It also supports searching, sorting, pagination, price filtering, input validati
 ## Project Structure
 
 ```text
-lab3/
+Deepthi_5026_lab3/
 │
-├── app.js
-├── database.db
-├── package.json
-├── package-lock.json
 ├── .gitignore
-├── README.md
-│
-└── screenshots/
-    ├── 01-get-all.png
-    ├── 02-search.png
-    ├── 03-sorting-pagination.png
-    ├── 04-price-filter.png
-    ├── 05-post-success.png
-    ├── 06-post-validation.png
-    ├── 07-put-update.png
-    └── 08-delete.png
+└── lab3/
+    ├── app.js
+    ├── database.db
+    ├── package.json
+    ├── package-lock.json
+    ├── README.md
+    └── screenshot/
+        ├── DELETE Request.png
+        ├── GET All Books.png
+        ├── Multiple Query.png
+        ├── Pagination.png
+        ├── POST Successful Request.png
+        ├── POST Validation Error.png
+        ├── Price Filtering.png
+        ├── PUT Update Request.png
+        ├── Search Books.png
+        └── Sorting.png
 ```
 
 ## Installation and Setup
@@ -58,13 +60,13 @@ lab3/
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/Deepthi-Reddy9854/Deepthi_5026_lab3.git
 ```
 
-### 2. Open the project folder
+### 2. Open the Lab 3 project folder
 
 ```bash
-cd lab3
+cd Deepthi_5026_lab3/lab3
 ```
 
 ### 3. Install dependencies
@@ -79,6 +81,7 @@ npm install
 npm run dev
 ```
 
+To start the server without the development watcher, use `npm start`.
 The server runs at:
 
 ```text
@@ -95,6 +98,8 @@ http://localhost:3000
 | PUT | `/books/:bookId` | Update a book |
 | DELETE | `/books/:bookId` | Delete a book |
 
+Replace `:bookId` with the numeric ID of the book.
+
 ## Query Parameters
 
 ### 1. Search Books
@@ -103,7 +108,7 @@ http://localhost:3000
 GET /books?search_q=clean
 ```
 
-Searches for books using a partial title.
+Searches for books using a partial title. The default search is empty.
 
 ### 2. Sorting
 
@@ -113,7 +118,8 @@ GET /books?order_by=price&order=ASC
 
 Sorts books by price in ascending order.
 
-Use `DESC` for descending order.
+The `order_by` value can be `id`, `title`, `author`, `price`, or `pages`.
+Use `DESC` for descending order; the default sort is by `id` in ascending order.
 
 ### 3. Pagination
 
@@ -121,7 +127,8 @@ Use `DESC` for descending order.
 GET /books?limit=5&offset=0
 ```
 
-Returns five records starting from the first record.
+Returns five records starting from the first record. The defaults are
+`limit=10` and `offset=0`.
 
 ### 4. Price Filtering
 
@@ -195,35 +202,43 @@ The tests include:
 
 ### 1. GET All Books
 
-![GET All Books](screenshots/01-get-all.png)
+![GET All Books](screenshot/GET%20All%20Books.png)
 
 ### 2. Search Books
 
-![Search Books](screenshots/02-search.png)
+![Search Books](screenshot/Search%20Books.png)
 
-### 3. Sorting and Pagination
+### 3. Sorting
 
-![Sorting and Pagination](screenshots/03-sorting-pagination.png)
+![Sorting](screenshot/Sorting.png)
 
-### 4. Price Filtering
+### 4. Pagination
 
-![Price Filtering](screenshots/04-price-filter.png)
+![Pagination](screenshot/Pagination.png)
 
-### 5. POST Successful Request
+### 5. Price Filtering
 
-![POST Success](screenshots/05-post-success.png)
+![Price Filtering](screenshot/Price%20Filtering.png)
 
-### 6. POST Validation Error
+### 6. Multiple Query Parameters
 
-![POST Validation](screenshots/06-post-validation.png)
+![Multiple Query Parameters](screenshot/Multiple%20Query.png)
 
-### 7. PUT Update Request
+### 7. POST Successful Request
 
-![PUT Update](screenshots/07-put-update.png)
+![POST Success](screenshot/POST%20Successful%20Request.png)
 
-### 8. DELETE Request
+### 8. POST Validation Error
 
-![DELETE Book](screenshots/08-delete.png)
+![POST Validation](screenshot/POST%20Validation%20Error.png)
+
+### 9. PUT Update Request
+
+![PUT Update](screenshot/PUT%20Update%20Request.png)
+
+### 10. DELETE Request
+
+![DELETE Book](screenshot/DELETE%20Request.png)
 
 ## Conclusion
 
