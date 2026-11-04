@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: deepthi-5026-lab3
+    runtime: node
+    plan: free
+    region: singapore
+    rootDir: lab3
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /books
