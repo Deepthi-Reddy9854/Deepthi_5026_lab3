@@ -12,7 +12,7 @@
 
 ## Deployment URL
 
-**Render URL:** Add your Lab 3 Render deployment URL here after deployment.
+**Render URL:** https://deepthi-5026-lab3.onrender.com
 
 ## Project Description
 
