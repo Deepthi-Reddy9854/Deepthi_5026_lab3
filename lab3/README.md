@@ -3,6 +3,7 @@
 ## Project Details
 
 - **Name:** Bolla Deepthi
+- **Email:** deepthibolla07@gmail.com
 - **Registration Number:** 252U1R5026
 - **Section:** S-10
 - **Course:** Backend Development Fundamentals
