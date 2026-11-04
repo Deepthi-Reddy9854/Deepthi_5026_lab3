@@ -2,7 +2,7 @@
 
 ## Project Details
 
-- **Name:** Bolla Deepth
+- **Name:** Bolla Deepthi
 - **Registration Number:** 252U1R5026
 - **Section:** S-10
 - **Course:** Backend Development Fundamentals
@@ -33,27 +33,26 @@ It also supports searching, sorting, pagination, price filtering, input validati
 ## Project Structure
 
 ```text
-Deepthi_5026_lab3/
+lab3/
 │
+├── app.js
+├── database.db
+├── package.json
+├── package-lock.json
 ├── .gitignore
 ├── README.md
-└── lab3/
-    ├── app.js
-    ├── database.db
-    ├── package.json
-    ├── package-lock.json
-    ├── README.md
-    └── screenshot/
-        ├── DELETE Request.png
-        ├── GET All Books.png
-        ├── Multiple Query.png
-        ├── Pagination.png
-        ├── POST Successful Request.png
-        ├── POST Validation Error.png
-        ├── Price Filtering.png
-        ├── PUT Update Request.png
-        ├── Search Books.png
-        └── Sorting.png
+│
+└── screenshot/
+    ├── 01-get-all.png
+    ├── 02-search.png
+    ├── 03-sorting.png
+    ├── 04-pagination.png
+    ├── 04-price-filter.png
+    ├── 06-multiple-query.png
+    ├── 07-post-success.png
+    ├── 08-post-validation.png
+    ├── 09-put-update.png
+    └── 10-delete.png
 ```
 
 ## Installation and Setup
@@ -61,13 +60,13 @@ Deepthi_5026_lab3/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Deepthi-Reddy9854/Deepthi_5026_lab3.git
+git  https://github.com/vinuthnabajjuri-25/vinuthna_5017_lab3.git
 ```
 
 ### 2. Open the project folder
 
 ```bash
-cd Deepthi_5026_lab3/lab3
+cd lab3
 ```
 
 ### 3. Install dependencies
@@ -82,7 +81,6 @@ npm install
 npm run dev
 ```
 
-To start the server without the development watcher, use `npm start`.
 The server runs at:
 
 ```text
@@ -107,7 +105,7 @@ http://localhost:3000
 GET /books?search_q=clean
 ```
 
-Searches for books using a partial title. The default search is empty.
+Searches for books using a partial title.
 
 ### 2. Sorting
 
@@ -117,8 +115,7 @@ GET /books?order_by=price&order=ASC
 
 Sorts books by price in ascending order.
 
-The `order_by` value can be `id`, `title`, `author`, `price`, or `pages`.
-Use `DESC` for descending order; the default sort is by `id` in ascending order.
+Use `DESC` for descending order.
 
 ### 3. Pagination
 
@@ -126,8 +123,7 @@ Use `DESC` for descending order; the default sort is by `id` in ascending order.
 GET /books?limit=5&offset=0
 ```
 
-Returns five records starting from the first record. The defaults are
-`limit=10` and `offset=0`.
+Returns five records starting from the first record.
 
 ### 4. Price Filtering
 
@@ -186,58 +182,53 @@ All API endpoints are tested using Postman.
 
 The tests include:
 
-1. Retrieve all books.
-2. Search books by title.
-3. Sort books by price.
-4. Test pagination.
-5. Filter books by price.
-6. Add a book using POST.
-7. Test invalid input validation.
-8. Update a book using PUT.
-9. Delete a book using DELETE.
-10. Test invalid IDs and missing records.
+1. Add a book using POST.
+2. Test invalid input validation.
+3. Update a book using PUT.
+4. Delete a book using DELETE.
+5. Test invalid IDs and missing records.
 
 ## Screenshots
 
 ### 1. GET All Books
 
-![GET All Books](lab3/screenshot/GET%20All%20Books.png)
+![GET All Books](screenshots/01-get-all.png)
 
 ### 2. Search Books
 
-![Search Books](lab3/screenshot/Search%20Books.png)
+![Search Books](screenshots/02-search.png)
 
 ### 3. Sorting
 
-![Sorting](lab3/screenshot/Sorting.png)
+![Sorting](screenshots/03-sorting.png)
 
 ### 4. Pagination
 
-![Pagination](lab3/screenshot/Pagination.png)
+![Pagination](screenshots/04-pagination.png)
 
 ### 5. Price Filtering
 
-![Price Filtering](lab3/screenshot/Price%20Filtering.png)
+![Price Filtering](screenshots/05-price-filter.png)
 
-### 6. Multiple Query Parameters
+### 6. Multiple Query
 
-![Multiple Query Parameters](lab3/screenshot/Multiple%20Query.png)
+![Multiple-query](screenshots/06-multiple-query.png)
 
 ### 7. POST Successful Request
 
-![POST Success](lab3/screenshot/POST%20Successful%20Request.png)
+![POST Success](screenshots/07-post-success.png)
 
 ### 8. POST Validation Error
 
-![POST Validation](lab3/screenshot/POST%20Validation%20Error.png)
+![POST Validation](screenshots/08-post-validation.png)
 
 ### 9. PUT Update Request
 
-![PUT Update](lab3/screenshot/PUT%20Update%20Request.png)
+![PUT Update](screenshots/09-put-update.png)
 
 ### 10. DELETE Request
 
-![DELETE Book](lab3/screenshot/DELETE%20Request.png)
+![DELETE Book](screenshots/10-delete.png)
 
 ## Conclusion
 
